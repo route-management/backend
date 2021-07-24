@@ -9,14 +9,14 @@ namespace IRepos.Route
 {
     public interface IRouteRepo
     {
-        bool CreatePilot(TblRoute route);
+        bool CreateRoute(TblRoute route);
 
         TblRoute ReadRouteById(string id);
 
-        List<TblPilot> ReadAllPilots();
+        List<TblRoute> ReadAllRoutes();
 
-        bool UpdPilot(TblPilot pilot);
+        bool UpdRoute(TblRoute route);
 
-        bool DeletePilot(Guid id);
+        bool DeleteRoute(Guid id);
     }
 }
