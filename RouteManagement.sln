@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RouteManagement", "RouteManagement\RouteManagement.csproj", "{A10B52F7-4645-461E-A69F-17922AC22AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRepos", "IRepos\IRepos.csproj", "{E0831340-15CC-41A7-A7D0-5240DD78B2D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{35F90183-6510-4C9B-9A6C-9BB4A6F58B50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A10B52F7-4645-461E-A69F-17922AC22AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10B52F7-4645-461E-A69F-17922AC22AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10B52F7-4645-461E-A69F-17922AC22AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10B52F7-4645-461E-A69F-17922AC22AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0831340-15CC-41A7-A7D0-5240DD78B2D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0831340-15CC-41A7-A7D0-5240DD78B2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0831340-15CC-41A7-A7D0-5240DD78B2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0831340-15CC-41A7-A7D0-5240DD78B2D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F90183-6510-4C9B-9A6C-9BB4A6F58B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F90183-6510-4C9B-9A6C-9BB4A6F58B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F90183-6510-4C9B-9A6C-9BB4A6F58B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F90183-6510-4C9B-9A6C-9BB4A6F58B50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5137457E-4113-4630-8673-A2AE7413031A}
+	EndGlobalSection
+EndGlobal
