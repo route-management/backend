@@ -17,6 +17,6 @@ namespace IRepos.Train
 
         bool UpdTrain(TblTrain train);
 
-        bool DeleteTrain(Guid id);
+        bool DeleteTrain(string id);
     }
 }

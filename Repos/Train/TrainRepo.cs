@@ -1,23 +1,23 @@
 ﻿using Entities.Models.Entities;
-using IRepos.Pilot;
+using IRepos.Train;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repos.Pilot
+namespace Repos.Train
 {
-    public class PilotRepo : IPilotRepo
+    public class TrainRepo : ITrainRepo
     {
-        public bool CreatePilot(TblPilot pilot)
+        public bool CreateTrain(TblTrain train)
         {
             bool result = false;
             using (var context = new RouteManagementContext())
             {
                 try
                 {
-                    context.TblPilots.Add(pilot);
+                    context.TblTrains.Add(train);
                     result = context.SaveChanges() > 0;
                 }
                 catch (Exception ex)
@@ -29,15 +29,15 @@ namespace Repos.Pilot
             return result;
         }
 
-        public bool DeletePilot(string id)
+        public bool DeleteTrain(string id)
         {
             bool result = false;
             using (var context = new RouteManagementContext())
             {
                 try
                 {
-                    var pilot = ReadPilotById(id);
-                    context.TblPilots.Remove(pilot);
+                    var train = ReadTrainById(id);
+                    context.TblTrains.Remove(train);
                     result = context.SaveChanges() > 0;
                 }
                 catch (Exception ex)
@@ -49,14 +49,14 @@ namespace Repos.Pilot
             return result;
         }
 
-        public List<TblPilot> ReadAllPilots()
+        public List<TblTrain> ReadAllTrains()
         {
-            var list = new List<TblPilot>();
+            var list = new List<TblTrain>();
             using (var context = new RouteManagementContext())
             {
                 try
                 {
-                    list = context.TblPilots.ToList();
+                    list = context.TblTrains.ToList();
                 }
                 catch (Exception ex)
                 {
@@ -67,14 +67,14 @@ namespace Repos.Pilot
             return list;
         }
 
-        public TblPilot ReadPilotById(string id)
+        public TblTrain ReadTrainById(string id)
         {
-            var data = new TblPilot();
+            var data = new TblTrain();
             using (var context = new RouteManagementContext())
             {
                 try
                 {
-                    data = context.TblPilots.Where((TblPilot pilot) => pilot.Id == id) as TblPilot;
+                    data = context.TblTrains.Where((TblTrain train) => train.Id == id) as TblTrain;
                 }
                 catch (Exception ex)
                 {
@@ -85,14 +85,14 @@ namespace Repos.Pilot
             return data;
         }
 
-        public bool UpdPilot(TblPilot pilot)
+        public bool UpdTrain(TblTrain train)
         {
             bool result = false;
             using (var context = new RouteManagementContext())
             {
                 try
                 {
-                    context.TblPilots.Update(pilot);
+                    context.TblTrains.Update(train);
                     result = context.SaveChanges() > 0;
                 }
                 catch (Exception ex)

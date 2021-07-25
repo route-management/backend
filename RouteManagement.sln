@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repos", "Repos\Repos.csproj", "{35F8DD5B-4F64-41A5-B17E-FFE552C56BBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IProviders", "IProviders\IProviders.csproj", "{D39ED8C8-85FB-4FEF-828D-AD9C64E30BE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{35F8DD5B-4F64-41A5-B17E-FFE552C56BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35F8DD5B-4F64-41A5-B17E-FFE552C56BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35F8DD5B-4F64-41A5-B17E-FFE552C56BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D39ED8C8-85FB-4FEF-828D-AD9C64E30BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39ED8C8-85FB-4FEF-828D-AD9C64E30BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39ED8C8-85FB-4FEF-828D-AD9C64E30BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39ED8C8-85FB-4FEF-828D-AD9C64E30BE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

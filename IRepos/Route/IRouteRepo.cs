@@ -17,6 +17,6 @@ namespace IRepos.Route
 
         bool UpdRoute(TblRoute route);
 
-        bool DeleteRoute(Guid id);
+        bool DeleteRoute(string id);
     }
 }

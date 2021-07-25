@@ -17,6 +17,6 @@ namespace IRepos.Stop
 
         bool UpdStop(TblStop stop);
 
-        bool DeleteStop(Guid id);
+        bool DeleteStop(string id);
     }
 }

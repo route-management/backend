@@ -17,6 +17,6 @@ namespace IRepos.RouteTrain
 
         bool UpdRouteTrain(TblRouteTrain routeTrain);
 
-        bool DeleteRouteTrain(Guid id);
+        bool DeleteRouteTrain(string id);
     }
 }

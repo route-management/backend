@@ -17,6 +17,6 @@ namespace IRepos.Pilot
 
         bool UpdPilot(TblPilot pilot);
 
-        bool DeletePilot(Guid id);
+        bool DeletePilot(string id);
     }
 }
