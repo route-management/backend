@@ -1,4 +1,5 @@
 ﻿using Entities.Models.Dtos;
+using Entities.Models.Entities;
 using Entities.Models.Schemas;
 using IProviders.Route;
 using IRepos.Route;
@@ -20,13 +21,22 @@ namespace RouteManagement.Services
             this.routeRepo = routeRepo;
         }
 
-        public Response<List<RouteSchema>> GetRoutes()
+        public Response<List<RouteSchema>> GetAllRoutes()
         {
             var data = new Response<List<RouteSchema>>();
             try
             {
                 var routeRepoList = routeRepo.ReadAllRoutes();
-                data.Data = new List<RouteSchema>(routeRepoList.Cast<RouteSchema>());
+                data.Data = routeRepoList.Select((TblRoute route) => new RouteSchema
+                {
+                    Id = Guid.Parse(route.Id),
+                    CreateDate = route.CreateDate,
+                    Data = route.Data,
+                    Disabled = route.Disabled,
+                    EndPoint = route.EndPoint,
+                    ModifyDate = route.ModifyDate,
+                    StartPoint = route.StartPoint
+                }).ToList();
             }
             catch (Exception ex)
             {

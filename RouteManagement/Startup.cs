@@ -1,3 +1,4 @@
+using IProviders.Route;
 using IRepos.Route;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -5,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Repos.Route;
+using RouteManagement.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +21,8 @@ namespace RouteManagement
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IRouteRepo, RouteRepo>();
+            services.AddSingleton<IRouteManager, RouteManager>();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +41,8 @@ namespace RouteManagement
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
+
+                endpoints.MapControllers();
             });
         }
     }
