@@ -10,6 +10,6 @@ namespace IProviders.Route
 {
     public interface IRouteManager
     {
-        Response<List<RouteSchema>> GetRoutesInfo();
+        Response<List<RouteSchema>> GetRoutes();
     }
 }

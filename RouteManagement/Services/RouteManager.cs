@@ -20,7 +20,7 @@ namespace RouteManagement.Services
             this.routeRepo = routeRepo;
         }
 
-        public Response<List<RouteSchema>> GetRoutesInfo()
+        public Response<List<RouteSchema>> GetRoutes()
         {
             var data = new Response<List<RouteSchema>>();
             try
